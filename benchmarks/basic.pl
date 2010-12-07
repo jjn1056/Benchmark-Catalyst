@@ -8,10 +8,12 @@ use Catalyst::Test 'Benchmark::Catalyst::Web';
 
 timethis
 (
-  100,
+  5000,
   sub {
     request('/');
   },
 );
 
+__END__
 
+perl -I ~/Desktop/Catalyst/5.80/branches/psgi/lib/ -I lib benchmarks/basic.pl
