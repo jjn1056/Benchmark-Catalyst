@@ -4,7 +4,14 @@ use strict;
 use warnings;
 
 use Benchmark qw(:all);
-use Catalyst::Test;
-use Benchmark::Catalyst::Web;
+use Catalyst::Test 'Benchmark::Catalyst::Web';
 
-timethis (100, sub { request('/') });
+timethis
+(
+  100,
+  sub {
+    request('/');
+  },
+);
+
+
