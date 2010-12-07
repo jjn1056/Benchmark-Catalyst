@@ -12,6 +12,7 @@ requires 'Moose';
 requires 'namespace::autoclean';
 requires 'Config::General';
 test_requires 'Test::More' => '0.88';
+test_requires 'Benchmark';
 
 all_from 'lib/Benchmark/Catalyst.pm';
 require 'maint/Makefile.PL.include'
